@@ -1,0 +1,15 @@
+/* Utilities only: the existing site's reset and typography remain unchanged. */
+@layer theme, base, components, utilities;
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/utilities.css' layer(utilities);
+@source './';
+
+@theme inline {
+  --color-background: var(--bg);
+  --color-foreground: var(--text);
+  --color-muted-foreground: var(--muted);
+  --color-primary: var(--bronze);
+  --color-border: var(--line);
+  --font-sans: Manrope, Arial, sans-serif;
+  --font-serif: 'Instrument Serif', Georgia, serif;
+}
